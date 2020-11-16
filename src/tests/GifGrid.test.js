@@ -23,11 +23,12 @@ describe("Pruebas de GifGrid", () => {
             title: "Cualquier cosa"
         }];
         useFetchGifs.mockReturnValue({
-            data: [gifs],
+            data: gifs,
             loading: true
         });
         const wrapper = shallow(<GifGrid category="Dragon"/>);
         expect(wrapper).toMatchSnapshot();
+        expect(wrapper.find("GifGridItem").length).toBe(gifs.length);
         assert();
     });
 });

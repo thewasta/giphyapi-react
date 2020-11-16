@@ -12,13 +12,10 @@ exports[`Pruebas de GifGrid debe de mostrar items cuando se cargar imágenes con
     className="card-grid "
   >
     <GifGridItem
-      0={
-        Object {
-          "id": "ABC",
-          "title": "Cualquier cosa",
-          "url": "https://cualqircosa.com/abc.jpg",
-        }
-      }
+      id="ABC"
+      key="ABC"
+      title="Cualquier cosa"
+      url="https://cualqircosa.com/abc.jpg"
     />
   </div>
 </Fragment>

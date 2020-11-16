@@ -2,8 +2,8 @@ import React, {useState} from "react";
 import {AddCategory} from "./components/AddCategory";
 import GifGrid from "./components/GifGrid";
 
-const GifExpertApp = () => {
-    const [categories, setCategories] = useState(["Netflix"]);
+const GifExpertApp = ({defaultCategories = []}) => {
+    const [categories, setCategories] = useState(defaultCategories);
     return (
         <>
             <div className="animate__animated animate__fadeIn">Expert App</div>

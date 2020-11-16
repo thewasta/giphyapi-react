@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas de Index Comprobar el snapshot 1`] = `
+<Fragment>
+  <div
+    className="animate__animated animate__fadeIn"
+  >
+    Expert App
+  </div>
+  <AddCategory
+    setCategories={[Function]}
+  />
+  <hr />
+  <ol />
+</Fragment>
+`;
+
+exports[`Pruebas de Index debe mostrar lista de categorías 1`] = `
+<Fragment>
+  <div
+    className="animate__animated animate__fadeIn"
+  >
+    Expert App
+  </div>
+  <AddCategory
+    setCategories={[Function]}
+  />
+  <hr />
+  <ol>
+    <GifGrid
+      category="One Punch"
+      key="One Punch"
+    />
+    <GifGrid
+      category="Doraemon"
+      key="Doraemon"
+    />
+  </ol>
+</Fragment>
+`;
